@@ -13,13 +13,13 @@ import {
 	ResizablePanelGroup,
 } from "@/components/ui/resizable";
 import { ImperativePanelHandle } from "react-resizable-panels";
-import { getCompactFontData, loadFonts } from "./utils/fonts";
+import { getCompactFontData, loadFonts } from "@/utils/fonts";
 import { SECONDARY_FONT, SECONDARY_FONT_URL } from "@/constants/constants";
 import MenuList from "./menu-list";
 import { MenuItem } from "./menu-item";
 import { ControlItem } from "./control-item";
 import CropModal from "./crop-modal/crop-modal";
-import useDataState from "./store/use-data-state";
+import useDataState from "@/store/use-data-state";
 import { FONTS } from "./data/fonts";
 import FloatingControl from "./control-item/floating-controls/floating-control";
 import { useSceneStore } from "@/store/use-scene-store";
@@ -27,9 +27,9 @@ import { dispatch } from "@designcombo/events";
 import MenuListHorizontal from "./menu-list-horizontal";
 import { useIsLargeScreen } from "@/hooks/use-media-query";
 import { ITrackItem } from "@designcombo/types";
-import useLayoutStore from "./store/use-layout-store";
+import useLayoutStore from "@/store/use-layout-store";
 import ControlItemHorizontal from "./control-item-horizontal";
-import { design } from "./mock";
+import { design } from "@/constants/mock";
 
 const stateManager = new StateManager({
 	size: {
