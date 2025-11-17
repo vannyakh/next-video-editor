@@ -147,7 +147,7 @@ export const presets: Record<PresetName, Animation> = {
           fontFamily: "Allura-Regular",
           url: "https://fonts.gstatic.com/s/allura/v15/9oRPNYsQpS4zjuAPjAIXPtrrGA.ttf"
         }
-      ]
+      ] as { fontFamily: string; url: string }[]
     }
   },
   vintageAnimationLoop: {

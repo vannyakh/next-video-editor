@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/resizable";
 import { ImperativePanelHandle } from "react-resizable-panels";
 import { getCompactFontData, loadFonts } from "./utils/fonts";
-import { SECONDARY_FONT, SECONDARY_FONT_URL } from "./constants/constants";
+import { SECONDARY_FONT, SECONDARY_FONT_URL } from "@/constants/constants";
 import MenuList from "./menu-list";
 import { MenuItem } from "./menu-item";
 import { ControlItem } from "./control-item";
