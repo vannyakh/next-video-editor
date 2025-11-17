@@ -636,7 +636,7 @@ export default function ControlItemHorizontal() {
     visible: {
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         damping: 25,
         stiffness: 300,
         duration: 0.3
@@ -645,7 +645,7 @@ export default function ControlItemHorizontal() {
     exit: {
       y: "100%",
       transition: {
-        type: "spring",
+        type: "spring" as const,
         damping: 25,
         stiffness: 300,
         duration: 0.2
