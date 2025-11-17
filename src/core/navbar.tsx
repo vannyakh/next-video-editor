@@ -30,7 +30,7 @@ import {
   useIsSmallScreen,
 } from "@/hooks/use-media-query";
 
-// import { LogoIcons } from "@/components/shared/logos";
+import { LogoIcons } from "@/components/shared/logos";
 import Link from "next/link";
 
 export default function Navbar({
@@ -89,7 +89,7 @@ export default function Navbar({
 
       <div className="flex items-center gap-2">
         <div className="pointer-events-auto flex h-11 w-11 items-center justify-center rounded-md text-zinc-200">
-          {/* <LogoIcons.scenify /> */}
+          <LogoIcons.scenify />
         </div>
 
         <div className=" pointer-events-auto flex h-10 items-center px-1.5">
@@ -126,14 +126,9 @@ export default function Navbar({
         )}
       </div>
 
-      {/* <div className="flex h-11 items-center justify-end gap-2">
+      <div className="flex h-11 items-center justify-end gap-2">
         <div className=" pointer-events-auto flex h-10 items-center gap-2 rounded-md px-2.5">
-          <Link href="https://discord.gg/Jmxsd5f2jp" target="_blank">
-            <Button className="h-7 rounded-lg" variant={"outline"}>
-              <LogoIcons.discord className="w-6 h-6" />
-              <span className="hidden md:block">Join Us</span>
-            </Button>
-          </Link>
+          
           <Button
             className="flex h-7 gap-1 border border-border"
             variant="outline"
@@ -145,7 +140,7 @@ export default function Navbar({
 
           <DownloadPopover stateManager={stateManager} />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

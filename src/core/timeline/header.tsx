@@ -320,7 +320,7 @@ const ZoomControl = ({
           min={0}
           max={12}
           step={1}
-          onValueChange={(e) => {
+          onValueChange={(e: number[]) => {
             setLocalValue(e[0]); // Update local state
           }}
           onValueCommit={() => {

@@ -45,8 +45,8 @@ const Blur = ({
         <Slider
           id="blur"
           value={[localValue]} // Use local state for slider value
-          onValueChange={(e) => {
-            setLocalValue(e[0]); // Update local state
+          onValueChange={(e: number[]) => {
+            setLocalValue(e[0] as number); // Update local state
           }}
           onValueCommit={() => {
             onChange(localValue); // Propagate value to parent when user commits change
